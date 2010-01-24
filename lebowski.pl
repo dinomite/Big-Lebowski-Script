@@ -19,7 +19,7 @@ while (<FH>) {
     if (/^ {15}[A-Z][ :A-Z']+$/) {
         # Scene title
         s/^ +//;
-        s/^/<a href='#$count'>/;
+        s/^/<a name='$count'>/;
         s/$/<\/a>/;
 
         chomp $_;
